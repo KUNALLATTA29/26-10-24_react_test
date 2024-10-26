@@ -1,0 +1,52 @@
+Command 1.
+
+ db.users.insertOne({name:"kunal", emial:"latta@example.com",age:24})
+
+
+
+Command 2.
+
+ db.users.find()
+
+
+
+Command 3.
+
+ db.users.find({email:"alice@example.com"})
+
+
+Command 4.
+
+ db.users.updateOne({name:'Bob'}, {$set:{age:30}})
+
+
+Command 5.
+
+db.users.updateMany({isActive:true},{$set:{email:'default@example.com'}})
+
+
+Command 6.
+
+db.users.countDocuments()
+
+
+Command 7.
+
+ db.users.deleteMany({isActive:false})
+
+
+
+Command 8.
+
+ db.users.find({hobbies:'hiking'})
+
+
+Command 9.
+
+db.users.find({age:{$gt:25},hobbies:{$in:['gaming','reading']}})
+
+
+
+Command 10.
+
+ db.users.deleteMany({age:{$lt:30},hobbies:{$ne:'hiking'}})
